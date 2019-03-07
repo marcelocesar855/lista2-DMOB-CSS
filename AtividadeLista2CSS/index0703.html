@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista 2 de CSS</title>
+	<style type="text/css">
+		p.paragraph {
+		 	border-left: 20em solid green;
+		 	border-right: 20em solid red;
+		 	width: 60%;
+		 	height: 400px;
+		 	font-size: 12px;
+		 	letter-spacing: 3em;
+		 	word-spacing: 4ex;
+		 	text-align: justify;
+		 	font-family: Verdana;
+		 	text-indent: 25px;
+		 	line-height: 3em;
+		}
+
+		 p.paragraph:first-letter {
+		 	font-size: 36px;
+		 	color: blue;
+		 	text-decoration: overline;
+		 }
+
+		 p.paragraph:first-line {
+		 	text-decoration: underline;
+		 	text-transform: uppercase;
+		 }
+
+		 a.cl1:link {
+		 	text-decoration: none;
+		 }
+
+		 a.cl2:link {
+		 	text-decoration: overline;
+		 }
+
+		 a.cl2:active {
+		 	text-decoration: line-through;
+		 }
+
+		 a.cl2:visited {
+		 	text-decoration: underline;
+		 }
+
+		 a.cl3:link {
+		 	color: orange;
+		 }
+
+		 a.cl3:hover {
+		 	color: green;
+		 	text-decoration: underline;
+		 }
+
+		 a.cl4:link {
+		 	border: 1px solid blue;
+		 	background-color: black;
+		 	color: white;
+		 }
+
+		 a.cl4:hover {
+		 	border: 1px dotted black;
+		 	background-color: white;
+		 	color: black;
+		 }
+
+		 a.cl5:link {
+		 	color: red;
+		 }
+
+		 a.cl5:visited {
+		 	font-weight: bold;
+		 	color: orange;
+		 }
+
+		 a.cl5:hover {
+		 	text-decoration: underline;
+		 }
+
+		 a.cl5:active {
+		 	color: yellow;
+		 }
+
+		 div.adidas {
+		 	background-image: url('adidas-piramide.jpg');
+		 	width: 250px;
+		 	height: 250px;
+		 }
+
+		 div.adidas:hover {
+		 	background-image: url('adidas-leaf.png');
+		 	width: 250px;
+		 	height: 250px;
+		 }
+
+		 div.mastercard {
+		 	background-image: url('mastercard-old.png');
+		 	width: 250px;
+		 	height: 250px;
+		 }
+
+		 div.mastercard:hover {
+		 	background-image: url('mastercard-new.jpg');
+		 	width: 250px;
+		 	height: 250px;
+		 }
+
+		 nav.menu ul{
+		 	border: 1px solid black;
+		 	width: 650px;
+		 	height: 150px;
+		 }
+
+		 nav.menu li{
+		 	display: inline-block;
+		 	padding: 10px;
+		 }
+
+		 nav.menu a {
+		 	text-decoration: none;
+		 	font-family: Arial;
+		 	font-size: 22px;
+		 	font-weight: bold;
+		 }
+
+		 nav.menu a:hover{
+		 	text-decoration: overline;
+		 }
+
+		 ul.lista {
+		 	list-style-image: url('seta.gif');
+		 	width: 300px;
+		 }
+
+		 ul.lista li {
+		 	font-family: Verdana;
+		 	color: red;
+		 	font-size: 12px;
+		 	border-bottom: 1px dotted red;
+		 }
+
+		 ul.lista li:hover{
+		 	list-style-image: url(seta2.gif);
+		 	color: green;
+		 	border-bottom: 1px dotted green;
+		 }
+
+		 div.noticias {
+		 	border: 1px solid black;
+		 	grid-template-columns: repeat(2, 1fr);
+		 	display: grid;
+		 	width: 300px;
+		 	height: 200px;
+		 	padding: 10px;
+		 }
+
+		 div.noticias a {
+		 	text-decoration: none;
+		 	width: 120px;
+		 	word-wrap: break-word;
+		 	font-family: Arial;
+		 	font-weight: bold;
+		 }
+
+		 div.noticias a:hover {
+		 	text-decoration: underline;
+		 }
+
+		 img.noticia:hover {
+		 	border: 2px solid red;
+		 }
+	</style>
+</head>
+<body>
+
+	<p class="paragraph">
+		Hello World! <br>
+		That's a p tag.
+	</p>
+	<br>
+	<a class="cl1" href="http://www.google.com.br/search?q=link+1">Link 1</a>
+	<a class="cl2" href="http://www.google.com.br/search?q=link+2">Link 2</a>
+	<a class="cl3" href="http://www.google.com.br/search?q=link+3">Link 3</a>
+	<a class="cl4" href="http://www.google.com.br/search?q=link+4">Link 4</a>
+	<a class="cl5" href="http://www.google.com.br/search?q=link+5">Link 5</a>
+	<br>
+	<div class="adidas"></div>
+	<div class="mastercard"></div>
+	<br>
+	<nav class="menu">
+		<ul>
+			<img src="globo.png" style="width: 100px;height: 100px;">
+			<li>
+				<a href="http://www.google.com.br/search?q=globo+noticias"
+				style="color: red;">notícias</a>
+			</li>
+			<li>
+				<a href="http://www.google.com.br/search?q=globo+esportes"
+				style="color: green;">esportes</a>
+			</li>
+			<li>
+				<a href="http://www.google.com.br/search?q=globo+entreterimento"
+				style="color: yellow;">entreterimento</a>
+			</li>
+			<li>
+				<a href="http://www.google.com.br/search?q=globo+videos"
+				style="color: blue;">vídeos</a>
+			</li>
+		</ul>
+	</nav>
+	<br>
+	<ul class="lista">
+		<li>
+			1Kg de batata
+		</li>
+		<li>
+			2 ovos
+		</li>
+		<li>
+			1 xícara de leite
+		</li>
+		<li>
+			200 gramas de farinha de trigo
+		</li>
+		<li>
+			1 colher de sopa de manteiga
+		</li>
+	</ul>
+	<br>
+	<div class="noticias">
+		<a href="http://www.google.com.br/search?q=globo">
+			<img class="noticia" src="cemiterio.jpg" style="width: 120px;height: 120px;">
+			<br>
+			Morre difunto no cimitério
+		</a>
+		<a href="http://www.google.com.br/search?q=globo">
+			<img class="noticia" src="nascido.jpg" style="width: 120px;height: 120px;">
+			<br>
+			Nasce recém nascido no hospital
+		</a>
+	</div>
+</body>
+</html>
